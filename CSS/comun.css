@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+/* FUENTE */
+
+body{
+    background-color: #111111;
+    color: #E2E1E1;
+    font-family: 'Montserrat';
+}
+
+header{
+    height: 50vh;
+    background-image: url("../images/Fondos/fondo_1.jpg");
+    background-size: cover;
+    background-position: 0 28%;
+    filter: sepia(0.5) hue-rotate(-10deg) saturate(1.4);
+    display: flex;
+    justify-content: space-between;
+}
+
+header img{
+    height: 12vh;
+    width: auto;
+    padding: 2vh 2vw;
+}
+
+nav{
+    height: 6vh;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #111111;
+}
+
+nav a{
+    width: 100%;
+    padding: 2vh 2vw;
+    border: 2px solid #E2E1E1;
+    border-width: 2px 1px;
+    color: #E2E1E1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a:hover{
+    /* background-color: #E1E2E2;
+    color: #111111; */
+    font-weight: bold;
+}
+
+
+
+nav img{
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+.lupa{
+    display: flex;
+    justify-content: space-between;
+    /* text-decoration: underline; */
+}
+
+.lupa img{
+    height: 2vh;
+}
+
+.iconos{
+    width: 1%;
+}
+
+main{
+    padding: 7vh 5vw;
+}
+
+.contenido:hover, .contenido_2:hover, .contenido_r:hover{
+    background-color: #E1E2E2;
+    color: #111111;
+}
+
+
+@media (max-width: 600px){
+    header{
+        height: 20vh;
+    }
+
+    header img{
+        height: 8vh;
+    }
+
+    nav{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    nav a{
+        height: 2vh;
+        width: 50%;
+        border-width: 2px 1px;
+    }
+
+    .lupa{
+        width: 100%;
+    }
+
+    .iconos{
+        width: 25%;
+    }
+
+}

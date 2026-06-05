@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body{
+    font-family: 'Montserrat';
+}
+
+section{
+    font-size: 1.3em;
+}
+
+
+#productos article{
+    height: 60vh;
+    border: 2px solid #E1E2E2;
+    display: flex;
+    flex-direction: row;
+    margin: 5vh 0;
+}
+.contenido1{
+    width: 60%;
+    border-left: 2px solid #E1E2E2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8vh 8vw;
+}
+
+.c_imagen{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c_imagen a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen1{
+    width: 100%;
+    height: auto;
+}
+
+.imagen2{
+    width: 90%;
+    height: auto;
+}
+
+h1, h3{
+    font-weight: bold;
+}
+
+h1{
+    font-size: 3em;
+}
+
+.añadir{
+    width: 20%;
+    border: 1px solid #E1E2E2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+p{
+    padding: 1vh 1vw;
+}
+
+a{
+    text-decoration: none;
+    color: #E1E2E2;
+}
+
+.añadir button{
+    background: none;
+    color: #E1E2E2;
+    width: 100%;
+}
+
+.total{
+    display: flex;
+    flex-direction: column;
+}
+
+.total button{
+    height: 5vh;
+    width: 12vw;
+    background: #E1E2E2;
+    border-radius: 16px;
+    font-weight: bold;
+}
+
+.pago{
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.boton{
+    display: flex;
+    justify-content: end;
+}
+
+.boton button:hover{
+    border: 1px solid #E1E2E2;
+    background-color: #111111;
+    color: #E1E2E2;
+}
+
+@media (max-width: 600px) {
+    #productos article{
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        width: 100%;
+    }
+
+    .c_imagen{
+        height: 70%;
+        width: 100%;
+    }
+
+    .contenido1{
+        border-left: 0px solid #E1E2E2;
+        border-top: 2px solid #E1E2E2;
+        height: 30%;
+        width: 100%;
+    }
+
+    .boton button{
+        width: 30%;
+    }
+
+    .contenido1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .contenido1 .info{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .añadir{
+        height: 3vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .añadir button{
+        height: 100%;
+    }
+
+
+
+
+
+
+}
